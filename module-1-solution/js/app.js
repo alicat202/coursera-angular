@@ -20,12 +20,15 @@
                         
                         if ($scope.enterredItems.length <= 3){
                         $scope.message = "Enjoy!";
+                        $scope.colorClass = "green";
                         } else if ($scope.enterredItems.length > 3) {
-                           $scope.message = "Too much!"; 
+                           $scope.message = "Too much!";
+                           $scope.colorClass = "red";
                         }
                         
                     } else {
                         $scope.message = "Please enter data first"; 
+                        $scope.colorClass = "red";
                     }
                    
                 }
